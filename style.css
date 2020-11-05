@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 255, 255, 1);
+}
+li {
+  list-style-type: none;
+}
+/* ICONS */
+.facebook {
+  background-image: url(images/facebook.svg);
+}
+.google {
+  background-image: url(images/google.svg);
+}
+.twitter {
+  background-image: url(images/twitter.svg);
+}
+.instagram {
+  background-image: url(images/instagram.svg);
+}
+.vk {
+  background-image: url(images/vk.svg);
+}
+.pinterest {
+  background-image: url(images/pinterest.svg);
+}
+
+/* ШАПКА */
+.header {
+  height: 64px;
+  background-color: rgb(0, 0, 0, 1);
+}
+/* позиционирование меню */
+.header-center {
+  margin: 0 10.13%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* для отступа от логотипа при сужении */
+.img-header {
+  margin-right: 2%;
+}
+/* блок меню справа */
+ul.header-menu {
+  padding: 0;
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+li.menu-paragraph {
+  display: list-item;
+}
+
+/* РАЗДЕЛ 1 */
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background: url('images/city1.jpg');
+  background-size: cover;
+  /* позиционирование блоков sct1 */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+/* для левого блока с текстом sct1 */
+.content-sct1 {
+  margin-left: 10.13%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 3%;
+}
+/* левый блок -> большой логотип */
+.logo-sct1 {
+  width: 175px;
+  height: 60px;
+  background: url('images/Logo_b.png');
+}
+/* левый блок -> текст под лого */
+.big-txt-sct1 {
+  font-size: 2.25rem;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* white-space: nowrap; */
+}
+/* левый блок -> белая линия */
+.line-sct1 {
+  width: 100px;
+  height: 2px;
+  background-color: rgb(255, 255, 255, 1);
+}
+/* левый блок -> контент (много текста) */
+.cont-txt-sct1 {
+  margin-top: 2rem;
+  margin-bottom: 2.625rem;
+  line-height: 1.625rem;
+  white-space: nowrap;
+}
+/* правый блок */
+.block-sct1 {
+  margin-right: 10.13%;
+  width: 350px;
+  height: 370px;
+}
+/* правый блок -> оформление текста */
+.txt-menu {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.375rem;
+  color: rgb(51, 51, 51, 1);
+}
+.txt-menu-cont {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(134, 135, 139, 1);
+  white-space: nowrap;
+}
+/* правый блок -> верх */
+.block1-sct1 {
+  background-color: rgb(223, 223, 223, 1);
+  color: rgb(51, 51, 51, 1);
+  height: 54px;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.block1-sct1 > span {
+  color: rgb(255, 155, 81, 1);
+  font-family: 'Open Sans', sans-serif;
+}
+/* правый блок -> центр */
+.block2-sct1 {
+  height: 262px;
+  background-color: rgb(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* правый блок -> низ */
+.block3-sct1 {
+  background-color: rgb(255, 155, 81, 1);
+  height: 54px;
+  border-radius: 0 0 10px 10px;
+  font-weight: bold;
+  font-size: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* поле ввода */
+input.registration {
+  width: 80%;
+  align-self: center;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  height: 24px;
+  color: rgb(189, 189, 189, 1);
+  border-bottom: 1px solid rgb(189, 189, 189, 1);
+  margin-bottom: 15%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
+}
+input.registration:nth-child(3) {
+  margin-bottom: 0;
+}
+
+/* БЛОК МЕНЮ ПОД SCT 1 */
+.under-sct1-menu {
+  width: 100%;
+  height: 105px;
+  background-color: rgb(255, 255, 255, 1);
+}
+/* оформление иконок */
+.image-icon {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* РАЗДЕЛ 3 */
+.section3 {
+  text-align: center;
+  padding-top: 102px;
+  font-family: 'Raleway', sans-serif;
+}
+.header-sct3 {
+  margin-bottom: 66px;
+}
+.h1-line {
+  letter-spacing: 2px;
+  font-size: 36px;
+  color: rgb(33, 33, 33, 1);
+}
+.line-orange {
+  width: 102px;
+  height: 2px;
+  background-color: rgb(255, 139, 56, 1);
+  margin: 22px auto;
+}
+.color-gray {
+  color: rgb(134, 135, 139, 1);
+}
+.card {
+  width: 350px;
+  display: inline-block;
+}
+.card-title {
+  margin: 27px auto 16px;
+  color: rgb(33, 33, 33, 1);
+}
+.card-description {
+  font-size: 14px;
+  margin-bottom: 21px;
+}
+.m-rl-33 {
+  margin: 0 33px;
+}
+.card-image {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 27px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 139, 56, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image-lamp {
+  background-image: url(./images/lamp.png);
+}
+.image-keyboard {
+  background-image: url(./images/keyboard.png);
+}
+.image-lighting {
+  background-image: url(./images/lighting.png);
+}
+.footer-sct3 {
+  margin-bottom: 90px;
+}
+
+/* РАЗДЕЛ 4 */
+.section4 {
+  text-align: center;
+  padding-top: 102px;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(245, 245, 245, 1);
+}
+.header-sct4 {
+  margin-bottom: 81px;
+}
+.line-orange-mal {
+  width: 64px;
+  height: 2px;
+  background-color: rgb(255, 139, 56, 1);
+  margin: 22px auto;
+}
+.color-gray {
+  color: rgb(68, 72, 87);
+}
+/* для блоков общее */
+ul.block-options {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  width: 350px;
+  padding: 0;
+  margin-bottom: 45px;
+}
+/* для небольших отступов при сужении окна между блоками */
+ul.block3-add {
+  margin-bottom: 111px;
+}
+li.block-black {
+  background-color: rgb(51, 51, 51, 1);
+  color: rgb(255, 255, 255, 1);
+  margin-bottom: 1px;
+}
+/* для блока 100px ($70) */
+li.block-black-100 {
+  height: 100px;
+  padding-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+}
+li.block-black-100:first-letter {
+  font-size: 24px;
+}
+/* для верхнего li */
+li.fz-black {
+  font-size: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-weight: bold;
+}
+/* для курсивного блока li */
+li.block-black-it {
+  background-color: rgb(51, 51, 51, 1);
+  color: rgb(255, 255, 255, 1);
+  font-style: italic;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+li.block-white {
+  background-color: rgb(255, 255, 255, 1);
+  text-transform: uppercase;
+  color: rgb(134, 135, 139, 1);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 1px;
+}
+.line-bw {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(255, 139, 56, 1);
+}
+/* bw - полоса между белым и черным 
+   bw-cont - с контентом */
+.line-bw-cont {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  color: rgb(255, 255, 255, 1);
+  background-color: rgb(255, 139, 56, 1);
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+/* отступ от центрального блока 40px */
+.m-rl-40 {
+  margin: 0 40px;
+}
+
+/* РАЗДЕЛ 6 */
+.section6 {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 255, 255, 1);
+  text-align: center;
+  width: 100%;
+  height: 297px;
+
+  background-image: url(./images/town.jpg);
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  z-index: -1;
+}
+.section6::after {
+  content: '';
+  position: absolute;
+  background: rgb(51, 51, 51, 0.58);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+.content-sct6 {
+  display: inline-block;
+  margin: 54px auto;
+}
+.title-content {
+  margin-bottom: auto;
+}
+.h1-line-white {
+  letter-spacing: 2px;
+  font-size: 36px;
+  color: rgb(255, 255, 255, 1);
+}
+.line-white {
+  width: 64px;
+  height: 2px;
+  background-color: rgb(255, 255, 255, 1);
+  margin: 22px auto;
+}
+.font-sct6 {
+  font-size: 14px;
+  margin: 22px 0 38px 0;
+}
+button {
+  width: 134px;
+  height: 42px;
+  background: #3a799900;
+  color: rgb(255, 255, 255, 1);
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+button a {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+button a:hover {
+  transform: translateY(0) scale(2);
+  color: black;
+}
+button:hover {
+  transform: translateY(0) scale(2);
+}
+/* ПОДВАЛ */
+.footer {
+  width: 100%;
+  height: 124px;
+  margin: 0 auto;
+
+  background-color: rgb(0, 0, 0, 1);
+}
+.footer-center {
+  margin-left: auto;
+  margin-right: auto;
+  height: 82px;
+  width: max-content;
+}
+.footer-icon {
+  display: inline-block;
+  margin-right: 22px;
+  margin-top: 28px;
+}
+.footer-icon-last {
+  display: inline-block;
+  margin-right: 0;
+}
+.footer-text {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 255, 255, 1);
+  font-size: 12px;
+}
